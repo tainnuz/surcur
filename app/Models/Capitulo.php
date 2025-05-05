@@ -11,7 +11,6 @@ class Capitulo extends Model
 
     protected $fillable = ['course_id', 'title', 'content', 'youtube_link'];
 
-    // Relación inversa con Curso
     public function curso()
     {
         return $this->belongsTo(Curso::class, 'course_id');

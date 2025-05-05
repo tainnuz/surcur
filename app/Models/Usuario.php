@@ -11,7 +11,6 @@ class Usuario extends Model
 
     protected $fillable = ['username', 'email', 'password', 'control_number', 'role'];
 
-    // Relación uno a muchos con Cursos
     public function cursos()
     {
         return $this->hasMany(Curso::class, 'created_by');
