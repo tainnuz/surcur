@@ -17,6 +17,7 @@ class CursoController extends Controller
             'capitulos' => 'required|array', 
             'capitulos.*.title' => 'required|string|max:255', 
             'capitulos.*.content' => 'required|string',
+            'capitulos.*.youtube_link' => 'nullable|string|url',
         ]);
 
         $userId = 1;
